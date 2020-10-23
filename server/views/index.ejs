@@ -1,15 +1,19 @@
 <%- include('./partials/header.ejs') -%>
 
-<%- include('./partials/content.ejs') -%>       
+    <div class="container">
 
-      <% if(title == 'Buisness Contact') { %>
+        <div class="jumbotron">
+<%- include('./partials/content.ejs') -%> 
+
+      <% if(title == 'Buisness List') { %>
         <%- include('./content/buisness-list.ejs') -%> 
       <% } else if(title == 'Add Buisness') { %>
-        <%- include('./content/add-Buisness.ejs') -%> 
+        <%- include('./content/add-buisness.ejs') -%> 
       <% } else if(title == 'Edit Buisness') { %>
         <%- include('./content/edit-buisness.ejs') -%> 
       <% } %>
-
+</div>
+</div>
     
 <%- include('./partials/footer.ejs') -%>
     

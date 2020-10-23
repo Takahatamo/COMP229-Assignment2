@@ -15,7 +15,7 @@ module.exports.DisplayBuisnessList = (req, res, next) => {
         res.end()
       }
   console.log(data)
-      res.render('index', { title: 'Buisness Contacts', Buisness: data ,
+      res.render('index', { title: 'Buisness List', buisnessess: data ,
       displayName: req.user ? req.user.displayName : ''});
     });
     
