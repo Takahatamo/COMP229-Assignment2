@@ -14,10 +14,12 @@ module.exports.DisplayBuisnessList = (req, res, next) => {
         console.error(err);
         res.end()
       }
-  console.log(data)
-      res.render('index', { title: 'Buisness List', buisnessess: data ,
-      displayName: req.user ? req.user.displayName : ''});
-    });
+      else{
+        console.log(data)
+        res.render('index', { title: 'Buisness List', buisnessess: data ,
+        displayName: req.user ? req.user.displayName : ''});  
+      } 
+    }).collation({locale:'en',strength:2}).sort({name:1});
     
   }
 
