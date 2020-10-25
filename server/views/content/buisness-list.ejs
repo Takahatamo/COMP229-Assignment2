@@ -35,7 +35,6 @@ Ethan Kyle San Juan-Cheong
                   <td><%= buisnessess[count].number %></td>
                   <td><%= buisnessess[count].email %></td>
                   
-                  <% if(typeof displayName == 'string' && displayName) { %>
                   <td>
                     <a href="/buisness-list/edit/<%= buisnessess[count]._id %>" class="btn btn-primary btn-sm">
                         <i class="fas fa-edit"></i> Update</a>
@@ -44,7 +43,7 @@ Ethan Kyle San Juan-Cheong
                       <a href="/buisness-list/delete/<%= buisnessess[count]._id %>" class="btn btn-danger btn-sm">
                           <i class="fas fa-trash-alt"></i> Delete</a>
                   </td>
-                  <% } %>
+
                 </tr>
                 
               <% } %>
